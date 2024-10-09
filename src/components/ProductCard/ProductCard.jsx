@@ -32,7 +32,7 @@ const ProductCard = ({ product }) => {
           <Card.Text>${product.price}</Card.Text>
           <Card.Text className={styles.ratingContainer}>
             {product.rating.rate}{" "}
-            <img id={styles.ratingStarIcon} src="src\assets\Navbar\StarRating.svg" alt="star ratings" />
+            <img id={styles.ratingStarIcon} src="src\assets\ProductCard\StarRating.svg" alt="star ratings" />
             {`(${product.rating.count})`}
           </Card.Text>
 
