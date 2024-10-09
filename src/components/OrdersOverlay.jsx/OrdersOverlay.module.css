@@ -1,0 +1,46 @@
+.ordersContainer {
+  height: 100vh;
+  width: 100%;
+  color: black;
+  background-color: whitesmoke;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.ordersContainerActive {
+  transform: translateY(0);
+}
+
+.closeIconContainer {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 0.2em;
+}
+
+.closeIconContainer:hover {
+  cursor: pointer;
+  border: solid 1px black;
+}
+
+.closeIcon {
+  height: 1em;
+}
+
+.ordersContent > h1 {
+  text-align: center;
+}
+
+.ordersContent {
+  overflow-y: scroll;
+  height: 80%;
+  scrollbar-width: none;
+}

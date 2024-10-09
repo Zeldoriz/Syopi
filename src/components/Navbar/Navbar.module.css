@@ -1,0 +1,110 @@
+.navChildren div,
+.logo,
+.navUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.navChildren div:hover,
+.logo:hover,
+.navUser:hover {
+  border-color: white;
+}
+
+#navbar {
+  position: fixed;
+  z-index: 100;
+  background-color: var(--primary-black);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: center;
+  padding: 0.25em 2vw;
+}
+
+.logo {
+  font-size: large;
+}
+
+.navSearchbarContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: fit-content;
+  border: 5px solid transparent;
+}
+
+.navSearchbar {
+  background-color: whitesmoke;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  width: 100%;
+  height: 1em;
+  padding: 1em;
+}
+
+.navSearchbar:focus {
+  outline: none;
+}
+
+.navSearchButton {
+  padding: 1em 0.75em;
+  height: 1em;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: 0.5px solid rgba(51, 51, 51, 0.3);
+  border-radius: 0 5px 5px 0;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navSearchButton:hover {
+  background-color: var(--orange-hovered);
+}
+
+.navSearchButton img {
+  width: 1em;
+  transform: scale(1.3);
+}
+
+.navChildren {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  gap: 1vw;
+}
+
+.navUserLoggedin {
+  text-wrap: nowrap;
+}
+
+#navUsername {
+  font-weight: 700;
+}
+
+.navUserLogin {
+  color: white;
+  text-decoration: underline !important;
+}
+
+.navLogout {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navLogout img {
+  width: 1.25em;
+  color: rgb(128, 0, 0);
+}

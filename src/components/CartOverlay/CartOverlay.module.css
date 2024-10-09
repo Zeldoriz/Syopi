@@ -1,0 +1,133 @@
+.cartContainer {
+  position: fixed;
+  right: 0;
+  top: 68px;
+  width: 35%;
+  height: calc(100vh - 68px);
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  color: black;
+}
+
+.cartContainerActive {
+  transform: translateX(0);
+}
+
+.closeIconContainer {
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 0.2em;
+}
+
+.closeIconContainer:hover {
+  cursor: pointer;
+  border: solid 1px black;
+}
+
+.closeIcon {
+  height: 1em;
+}
+
+.cartTitle {
+  color: black;
+  font-size: smaller;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.cartContent {
+  overflow-y: auto;
+  background-color: whitesmoke;
+  height: 80%;
+}
+
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.removeCartProduct {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  margin: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 0.1em;
+}
+
+.removeCartProduct:hover {
+  border-color: black;
+}
+
+.removeCartProduct img {
+  height: 0.75em;
+}
+
+.productImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage img {
+  padding: 0.5em;
+  height: 4em;
+  width: 4em;
+}
+
+.productTitle {
+  font-size: small;
+  width: 50%;
+}
+
+.productQuantity {
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.productQuantity span {
+  font-weight: 600;
+}
+
+.cartCheckoutContainer {
+  background-color: white;
+  color: black;
+  height: 11%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.cartCheckoutTotal {
+  font-size: medium;
+  font-weight: 600;
+}
+
+.cartCheckoutButton button {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  border-radius: 20px;
+  font-size: medium;
+}
+
+.cartCheckoutButton button:hover {
+  background-color: var(--yellow-hovered);
+  border-color: var(--yellow-hovered);
+}
