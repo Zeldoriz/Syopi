@@ -4,9 +4,11 @@
 
 Syopi is a minimal e-Commerce React application created with Vite, aimed at providing a simple and fast online shopping experience. The project focuses on delivering a basic setup to get React running in Vite, with built-in Hot Module Replacement (HMR) and some ESLint rules.
 
+You can view the live site here: [syopi.vercel.app](https://syopi.vercel.app/)
+
 ## Features
 
-- **Product Search**: Search bar to look up products in the local database.
+- **Product Search**: Search bar to look up products from a public API's database.
 - **Categorization**: Filters products based on pre-defined categories to filter through the database.
 - **Login / Logout**: Allows users to uniquely identify themselves by registering and logging into the system through their credentials.
 - **Cart**: Each user has a unique cart that is not shared amongst other users.
@@ -44,6 +46,7 @@ The application will be accessible at `http://localhost:5173` by default.
 - **CSS**: For styling the website.
 - **Vite**: A fast and modern build tool for web development.
 - **ESLint**: A tool for identifying and reporting on patterns in JavaScript code.
+- **Fake Store API**: To serve as an artificial backend.
 
 ## Contributing
 
